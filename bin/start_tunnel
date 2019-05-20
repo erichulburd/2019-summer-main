@@ -1,2 +1,2 @@
-gcloud compute ssh --ssh-flag="-L 8896:127.0.0.1:8896" --ssh-flag="-L 6006:127.0.0.1:6006" ehulburd@instance-1
+gcloud compute ssh --zone us-central1-c --ssh-flag="-L 8896:127.0.0.1:8896" --ssh-flag="-L 6006:127.0.0.1:6006" ehulburd@instance-1
 
