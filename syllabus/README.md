@@ -34,6 +34,7 @@ Understanding language is fundamental to human interaction. Our brains have evol
 * **Mark Butler**: Thursday immediately after his live session
 * **Sid J Reddy**: Friday immediately after his live session
 * **James Kunz**: Tuesday immediately after his live session
+* **Mike Tamir**: Tuesday immediately after his live session
 
 Office hours are for the whole class; students from any section are welcome to attend any of the times above.
 
@@ -126,6 +127,8 @@ We'll update the table below with assignments as they become available, as well 
 
 ### Deliverables
 
+Note:  we will update this table as we release (approximately weekly) assignments.
+
 <table>
 <tr>
 <th></th><th>Topic</th><th>Release</th><th>Deadline</th>
@@ -140,6 +143,16 @@ We'll update the table below with assignments as they become available, as well 
   </ul></td>
   <td>May&nbsp;6</td>
   <td>May&nbsp;12</td>
+</tr>
+<tr>
+  <td><strong><a href="../assignment/a1" target="_blank">Assignment&nbsp;1</a></strong>
+  <td><strong>Information Theory and NN Basics</strong>
+  <ul>
+    <li>Information Theory
+    <li>Network basics
+  </ul></td>
+  <td>May&nbsp;18</td>
+  <td>May&nbsp;26</td>
 </tr>
 <tr>
   <td><strong><a href="../project/#project-proposal" target="_blank">Project&nbsp;Proposal</a></strong>
