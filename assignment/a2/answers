@@ -111,35 +111,27 @@ embeddings_b_3b: foot
 # ------------------------------------------------------------------
 
 # Question 1 (/1): Italian vs. Mexican sentiment
-ml_fairness_1_1: 0.0
+ml_fairness_1_1: 8.274
 
 # Question 2a (/1): Least biased
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 ml_fairness_1_2a: 
  - ConceptNet Numberbatch
- - GloVe
- - Word2Vec
 
 # Question 2b (/1): Most biased
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 ml_fairness_1_2b: 
- - ConceptNet Numberbatch
- - GloVe
  - Word2Vec
 
 # Question 3 (/1): What technique did the author apply?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 ml_fairness_1_3: 
  - Debiasing Word Embeddings
- - Bias Risk Reduction
- - Adversarial Training
 
 # Question 4 (/2): How significant is the model performance penalty for using debased vectors?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 ml_fairness_1_4: 
  - None
- - Very little
- - Significant
 
 
 # ------------------------------------------------------------------
@@ -159,19 +151,14 @@ ml_fairness_2_1:
 # Question 1 (/2): What is the parity gap?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 ml_fairness_3_1: 
- - The probability assigned to the positive class given a protected variable is true minus the probability assigned to the positive class given the protected variable is false
- - The difference in propensity of the model to make a correct judgement in either direction given a particular value of protected variable
-
 # Question 2 (/2): What is the equity gap?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 ml_fairness_3_2: 
- - The probability assigned to the positive class given a protected variable is true minus the probability assigned to the positive class given the protected variable is false
  - The difference in propensity of the model to make a correct judgement in either direction given a particular value of protected variable
 
 # Question 3 (/2): What is the intuition behind Jlambda?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 ml_fairness_3_3: 
- - A multiplier to ensure back propagation works where the final affine layer is reducing variance
  - A negation of the gradient from a second head on the network that is trying to predict the protected variable such that the main network parameters make predictions worse on that head
 
 
@@ -291,10 +278,10 @@ language_models_1_7: 0.0
 tensorflow_1_1: 0
 
 # Question 2 (/1): What's the derivative of relu(z) with respect to z if z = 5
-tensorflow_1_2: 0
+tensorflow_1_2: 1
 
 # Question 3 (/5): How few layers can you get away with and still achieve the desired loss on the training set?
-tensorflow_1_3: 0
+tensorflow_1_3: 2
 
 # Question 4 (/5): How small is the biggest hidden layer is the smallest you can use in the body of the network and still achieve the desired loss on the training set?
-tensorflow_1_4: 0
+tensorflow_1_4: 3
