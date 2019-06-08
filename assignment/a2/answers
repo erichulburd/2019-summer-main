@@ -56,18 +56,17 @@ project_1_4:
 # ------------------------------------------------------------------
 
 # Question 2a (/1): Closest word to bank?
-embeddings_a_2a: your answer
+embeddings_a_2a: banks
 
 # Question 2b (/1): Closest word to plane?
-embeddings_a_2b: your answer
+embeddings_a_2b: airplane
 
 # Question 2c (/1): Closest word to flies?
-embeddings_a_2c: your answer
+embeddings_a_2c: fly
 
 # Question 2d (/1): Are the neighbors dominated by one sense of these words or is there evidence that the vector encodes meaning of the other senses as well?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
-embeddings_a_2d: 
- - Dominated by one interpretation
+embeddings_a_2d:
  - Multiple interpretations
 
 # Question 3a (/1): Closest word to orange?
@@ -85,7 +84,6 @@ embeddings_a_3d: your answer
 # Question 3e (/3): Do the vectors for "ochre" and "celadon" appear to encode a notion of color?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 embeddings_a_3e: 
- - Yes - related words emphasize the color interpretation
  - No - related words are similar on other dimensions
 
 
@@ -94,10 +92,10 @@ embeddings_a_3e:
 # ------------------------------------------------------------------
 
 # Question 3a (/1): Lizard to reptile, dog is to ____
-embeddings_b_3a: your answer
+embeddings_b_3a: mammal
 
 # Question 3b (/1): Finger is to hand as toe is to ___
-embeddings_b_3b: your answer
+embeddings_b_3b: foot
 
 
 
