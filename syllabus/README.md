@@ -177,7 +177,7 @@ Note:  we will update this table as we release (approximately weekly) assignment
   <td>June&nbsp;16</td>
 </tr>
 <tr>
-  <td><strong><a href="../assignment/a2" target="_blank">Assignment&nbsp;2</a></strong>
+  <td><strong><a href="../assignment/a3" target="_blank">Assignment&nbsp;3</a></strong>
   <td><strong>Classification</strong>
   <ul>
     <li>Classification, CNNs
