@@ -108,53 +108,53 @@ exploration_c_3_3: 50.3
 # ------------------------------------------------------------------
 
 # Question 1.1 (/2): What is the dimension of ck3?
-convolutional_neural_networks_a_1_1: 0
+convolutional_neural_networks_a_1_1: [8,1]
 
 # Question 1.2 (/2): What is the dimension of ck4?
-convolutional_neural_networks_a_1_2: 0
+convolutional_neural_networks_a_1_2: [7,1]
 
 # Question 1.3 (/2): What is the dimension of ck5?
-convolutional_neural_networks_a_1_3: 0
+convolutional_neural_networks_a_1_3: [6,1]
 
 # Question 1.4 (/2): What is the dimension of chatk3?
-convolutional_neural_networks_a_1_4: [d0]
+convolutional_neural_networks_a_1_4: [1]
 
 # Question 1.5 (/3): What is the dimension of chatk4?
-convolutional_neural_networks_a_1_5: [d0]
+convolutional_neural_networks_a_1_5: [1]
 
 # Question 1.6 (/3): What is the dimension of chatk5?
-convolutional_neural_networks_a_1_6: [d0]
+convolutional_neural_networks_a_1_6: [1]
 
 # Question 1.7 (/3): What is the dimension of Chat?
-convolutional_neural_networks_a_1_7: [d0]
+convolutional_neural_networks_a_1_7: [2097152]
 
 # Question 2.1 (/3): What is the dimension of ck3?
-convolutional_neural_networks_a_2_1: [d0]
+convolutional_neural_networks_a_2_1: [9, 1]
 
 # Question 2.2 (/3): What is the dimension of chatk3?
-convolutional_neural_networks_a_2_2: [d0]
+convolutional_neural_networks_a_2_2: [1]
 
 # Question 3.1 (/3): How many parameters are there in Wfilter=3?
-convolutional_neural_networks_a_3_1: 0
+convolutional_neural_networks_a_3_1: 30
 
 # Question 3.2 (/3): How many parameters are there in Wfilter=4?
-convolutional_neural_networks_a_3_2: 0
+convolutional_neural_networks_a_3_2: 40
 
 # Question 3.3 (/3): How many parameters are there in Wfilter=5?
-convolutional_neural_networks_a_3_3: 0
+convolutional_neural_networks_a_3_3: 50
 
 # Question 3.4 (/3): How many parameters are there in Wout?
-convolutional_neural_networks_a_3_4: 0
+convolutional_neural_networks_a_3_4: 4194304
 
 # Question 4 (/1): Compare kernels to feature engineering.
 # This question is a candidate for discussion in live session.
-convolutional_neural_networks_a_4: your answer
+convolutional_neural_networks_a_4: Each filter is essentially passing over the input matrix of each example and looking for a set of features. If the feature is detected on any subsequence of tokens in the input, that will be passed through to the max-pooling layer.
 
 # Question 5.1 (/2): Would the two predictions be the same?
 convolutional_neural_networks_a_5_1: False
 
 # Question 5.2 (/0): Why or why not?
-convolutional_neural_networks_a_5_2: your answer
+convolutional_neural_networks_a_5_2: No because order of tokens matters when passing over a convolutional filter. Yes a max-pooling layer makes its activation translation invariant, but a single filter will result in a different feature map when computing the value of \'foo bar\' as opposed to \'bar foo\'.
 
 
 # ------------------------------------------------------------------
@@ -165,16 +165,16 @@ convolutional_neural_networks_a_5_2: your answer
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 convolutional_neural_networks_c_1: 
  - random
- - grid
 
 # Question 2 (/0): Describe what you found.
-convolutional_neural_networks_c_2: your answer
+convolutional_neural_networks_c_2: While it was possible to move the training accuracy up to 96-97%, I found that this came at the cost of overfitting the training data and as a result the dev accuracy began to drop. It was difficult to improve to more than 75% on the dev and test sets
 
 # Question 3 (/0): Did you find they were the same?  Different?  (Are you overfitting the dev set?)
-convolutional_neural_networks_c_3: your answer
+convolutional_neural_networks_c_3: Interestingly, the test set accuracies are slightly higher than the dev set accuracies. This is likely a chance artifact of the data rather t
+han anything related to the training and fine tuning process. We are not overfitting the dev set.
 
 # Question 4 (/5): What was the best accuracy you achieved on the test set?  (As long as you show evidence of exploring, you'll get full points.)
-convolutional_neural_networks_c_4: 0.00000
+convolutional_neural_networks_c_4: 0.7798
 
 
 
@@ -193,31 +193,21 @@ convolutional_neural_networks_c_4: 0.00000
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 window_and_recurrent_models_a_1: 
  - Fast to train and use
- - Better capture context
 
 # Question 2 (/5): What is the computational complexity of the final affine and softmax (over V classes) with hidden layer of dimension h?  Hint. a matrix multiplication of m x n by n x o is O(mno).  Assume each other mathematical operation is O(1).
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 window_and_recurrent_models_a_2: 
- - O(hV)
  - O(hV^2)
- - O(V)
- - Something else
 
 # Question 3 (/1): In the RNN/LSTM slides (https://docs.google.com/presentation/d/11mkYXoPovKeT9w56Ddl9sS8gBwzoZrEdmszB4o83aYc/edit#slide=id.g5ad7553b58_7_240), when two wires merge in the diagrams, what does that mean?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 window_and_recurrent_models_a_3: 
- - dot product
- - element-wise addition
- - element-wise subtraction
- - element-wise multiplication
  - concatenation
 
 # Question 4 (/2): What are dangers of training RNNs (of any type) with long squences?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 window_and_recurrent_models_a_4: 
- - Exploding gradient
  - Vanishing gradient
- - Derivative too complex to compute
 
 
 
@@ -235,14 +225,9 @@ window_and_recurrent_models_a_4:
 # Question 1 (/3): What is BLEU?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 machine_translation_introduction_a_1: 
- - A sequence to sequence LSTM-based machine translation algorithm?
  - A metric for machine translation centered on a notion of precision of a candidate with respect to reference text.
- - A metric for machine translation centered on a notion of recall of a candidate with respect to reference text.
 
 # Question 2 (/3): What are the key parts of IBM Model 1?
 # (This question is multiple choice.  Delete all but the correct answer(s)).
 machine_translation_introduction_a_2: 
- - Term level translation model
- - Phrase table
  - Alignment model
- - Neural network attention
