@@ -29,9 +29,13 @@ def find_nn_cos(v, Wv, k=10):
       similarities: (k-dimensional vector of float), cosine similarity of each 
         neighbor in nns.
     """
-    pass
     #### YOUR CODE HERE ####
-
+    cos_similarities = np.matmul(Wv, v) / (np.linalg.norm(Wv, axis=1) * np.linalg.norm(v))
+    most_similar = np.argsort(-cos_similarities)[:k]
+    return (
+            most_similar,
+            cos_similarities[most_similar]
+    )
 
 
     #### END(YOUR CODE) ####
@@ -56,8 +60,8 @@ def analogy(vA, vB, vC, Wv, k=5):
       similarities: (k-dimensional vector of float), cosine similarity of each 
         of the top candidate words.
     """
-    pass
     #### YOUR CODE HERE ####
-
-
+    delta = vA - vB
+    theoretical_analogy = vC - delta
+    return find_nn_cos(theoretical_analogy, Wv, k)
     #### END(YOUR CODE) ####
