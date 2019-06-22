@@ -155,6 +155,20 @@ Note:  we will update this table as we release (approximately weekly) assignment
   <td>May&nbsp;26</td>
 </tr>
 <tr>
+  <td><strong><a href="../assignment/a2" target="_blank">Assignment&nbsp;2</a></strong>
+  <td><strong>Embeddings</strong>
+  <ul>
+    <li>Project Questionnaire
+    <li>Embeddings and ML Fairness
+    <li>CNN preliminaries
+    <li>Language model preliminaries
+    <li>Train our first neural network!
+  </ul></td>
+  <td>June&nbsp;1</td>
+  <td>June&nbsp;9</td>
+</tr>
+
+<tr>
   <td><strong><a href="../project/#project-proposal" target="_blank">Project&nbsp;Proposal</a></strong>
   <td>
   <strong><a href="../project" target="_blank">Final Project Guidelines</a></strong>
@@ -162,6 +176,18 @@ Note:  we will update this table as we release (approximately weekly) assignment
   <td></td>
   <td>June&nbsp;16</td>
 </tr>
+<tr>
+  <td><strong><a href="../assignment/a3" target="_blank">Assignment&nbsp;3</a></strong>
+  <td><strong>Classification</strong>
+  <ul>
+    <li>Classification, CNNs
+    <li>Machine Translation
+    <li>NN basics
+  </ul></td>
+  <td>June&nbsp;15</td>
+  <td>June&nbsp;26</td>
+</tr>
+
 <tr><!--- Project Reports -->
   <td><strong><a href="../project/#final-submission" target="_blank">Project&nbsp;Reports</a></strong>
   </td>
